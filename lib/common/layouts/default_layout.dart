@@ -10,6 +10,7 @@ class DefaultLayout extends StatelessWidget {
   final Color? backgroundColor;
   final String? title;
   final Widget? bottomNavigationBar;
+  final DecorationImage? backgroundDecorationImage;
 
   const DefaultLayout({
     Key? key,
@@ -17,6 +18,7 @@ class DefaultLayout extends StatelessWidget {
     this.backgroundColor,
     this.title,
     this.bottomNavigationBar,
+    this.backgroundDecorationImage,
   }) : super(key: key);
 
   @override
@@ -24,7 +26,12 @@ class DefaultLayout extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor ?? Colors.white,
       appBar: renderAppBar(),
-      body: child,
+      body: Container(
+        decoration: BoxDecoration(
+          image: backgroundDecorationImage,
+        ),
+        child: child,
+      ),
       //Scaffold에서 bottomNavigationBar속성을 지정하면 아래 네비게이션 바를 만들 수 있음
       bottomNavigationBar: bottomNavigationBar,
     );
