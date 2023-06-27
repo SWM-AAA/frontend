@@ -46,7 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     const AnimatedAppName(),
                     const SizedBox(
-                      height: 40,
+                      height: 40.0,
                     ),
                     KakaoLoginButton(
                       width: 248,
