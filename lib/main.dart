@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/common/screens/root_tab.dart';
 import 'package:frontend/common/screens/splash_screen.dart';
 
 void main() {
