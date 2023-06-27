@@ -34,6 +34,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  # dio는 react의 axios처럼 request요청을 보낼 때 사용되며
+  # interceptor 설정을 통해 다양한 요청 처리가 가능하기에 사용하게 되었습니다.
+  dio: ^5.2.1+1
 
 dev_dependencies:
   flutter_test:
